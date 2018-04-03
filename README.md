@@ -3,9 +3,11 @@
 Exercise for UIX delivering HTML/CSS based on a design and considering how components comprise an overall product.
 
 ## Summary
-You are going to build a site for Deina's Bites, a 100% natural cookie bakery. The site will include a home page, catalog page, item detail page, and a shopping cart with credit card feature. 
+Build a site for Deina's Bites, a 100% natural cookie bakery. The site will include a home page, catalog page, item detail page, and a shopping cart with credit card feature. 
 
-You are being given a prototype to follow for content placement, component design, etc. There is a style guide with colors and fonts. And all the images have been provided. But the rest is up to you!
+See the [prototype](https://9yg393.axshare.com/#g=1&p=home&c=1) to show how I, the developer, followed content placement, component design, etc. There is a [style guide](https://github.com/nashville-software-school/uix-look-alike/blob/master/style_guide.png) with colors and fonts. 
+
+And all the images have been provided. But the rest was up to me!
 
 ## Getting Started
 
