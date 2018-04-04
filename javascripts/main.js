@@ -1,3 +1,6 @@
 "use strict";
+require("./navigation");
+require("./homepage");
+require("./footer");
 
-console.log("App JS connected, yo!");
+
