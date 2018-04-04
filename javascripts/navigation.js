@@ -4,7 +4,7 @@ console.log("navigation linked");
 let $ = require('jquery'),
     home = require('./homepage');
 
-let nav = ["home", "shop", "about", "brand", "instagram", "facebook", "youtube"];
+let nav = ["home", "shop", "about", "brand", "instagram", "facebook", "youtube", "shoppingBag"];
 
 let shoppingBag = `<span class="fa-stack">
 <i class="fas fa-shopping-bag fa-stack-2x"></i>
@@ -15,18 +15,20 @@ nav.forEach((item)=>{
     if(item == "brand"){
         $(".nav").append(
             `<a class="brand-link brand" href="#" id="brand">Deina's Bites</a>`);
+    }else if(item == "shoppingBag"){
+        $(".nav").append(`<a class="nav-link" href="#" id="${item}">${shoppingBag}</a>`);
     }else{
         $(".nav").append(
             `<a class="nav-link" href="#" id="${item}">${item}</a>`);
     }
 });
 
-$(".nav").append(`<a class="nav-link" href="#" id="shoppingBag">${shoppingBag}</a>`);
-
-
 $(nav).each(function(index, item) {
     $(`#${item}`).on("click", function(e){
+        $(".main").html("");
         $(".nav-link").removeClass("active");
+        $(".main").removeClass("gray");
+
     let itemId = $(`#${item}`).attr('id'); 
         
     switch (itemId) {
@@ -36,7 +38,7 @@ $(nav).each(function(index, item) {
             break;
         case 'shop':
             $(`#${itemId}`).addClass("active");
-            home.showHomepage();
+            $(".main").addClass("gray");
         }
     });
 });

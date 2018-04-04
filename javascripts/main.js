@@ -1,6 +1,7 @@
 "use strict";
+
 require("./navigation");
-require("./homepage");
+let home = require("./homepage");
 require("./footer");
 
-
+home.showHomepage();

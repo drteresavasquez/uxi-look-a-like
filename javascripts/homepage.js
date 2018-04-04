@@ -7,7 +7,6 @@ let follow = require("./homepageComponents/followComponent");
 let $ = require('jquery');
 
 function showHomepage(){
-    $(".main").html("");
     $(".main").append(caro.showCarousel());
     $(".main").append(best.showBest());
     $(".main").append(follow.showFollow());
