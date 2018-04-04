@@ -2,7 +2,9 @@
 console.log("best sellers linked");
 
 let $ = require('jquery'),
-    baked = require("./../cookies"); //baked.cookies
+    baked = require("./../cookies"), //baked.cookies
+    shop = require('./../shop'),
+    singleCookie = require('./../singleCookie');
 
 function show() {
     $(".main").append(`
@@ -21,7 +23,7 @@ function show() {
             <div class="all-cookies">
                 <div class="all-cookies-component">
                     <hr>
-                    <button type="button" class="btn btn-outline-dark">All Cookies</button>
+                    <button type="button" id="all-cookies" class="btn btn-outline-dark">All Cookies</button>
                 </div>
             </div>
             <!-- ***** END ALL COOKIES BUTTON ***** -->
@@ -33,7 +35,7 @@ function show() {
         firstThree.forEach((cookie)=>{
             $('.best-sellers-items').append(`
             <div class="card col-sm-4 bs-item">
-            <img class="card-img-top" src="images/cookies/${cookie.img1}" alt="Card image cap">
+            <img class="card-img-top" id="${cookie.sku}" src="images/cookies/${cookie.img1}" alt="Card image cap">
             <div class="card-body">
                 <p class="card-text">
                     <span class="item-name">${cookie.name}</span>
@@ -43,6 +45,38 @@ function show() {
             </div>
         </div>
             `);
+        });
+
+        $(".all-cookies").click((e)=>{
+            $(".main").html("");
+            $(".nav-link").removeClass("active");
+            shop.show();
+        });
+
+        $(".card-img-top").click((e)=>{
+            let cookieSku = e.target.id;
+            baked.cookies.forEach((cookie)=>{
+                if(cookie.sku === cookieSku){
+                    singleCookie.show(cookie);
+                }
+            });
+        });
+        $(".card-img-top").on("mouseenter", (e)=>{
+            let cookieSku = e.target.id;
+            baked.cookies.forEach((cookie)=>{
+                if(cookie.sku === cookieSku){
+                    $(`#${cookieSku}`).attr('src', `images/cookies/${cookie.img2}`);
+                }
+            });
+        });
+    
+        $(".card-img-top").on("mouseleave", (e)=>{
+            let cookieSku = e.target.id;
+            baked.cookies.forEach((cookie)=>{
+                if(cookie.sku === cookieSku){
+                    $(`#${cookieSku}`).attr('src', `images/cookies/${cookie.img1}`);
+                }
+            });
         });
 }
 

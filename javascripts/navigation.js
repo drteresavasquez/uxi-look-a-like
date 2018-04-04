@@ -46,25 +46,3 @@ $(nav).each(function(index, item) {
         }
     });
 });
-
-
-
-
-
-
-
-// $(".nav").append(
-//     `<a class="nav-link active" href="#">Home</a>
-//     <a class="nav-link" href="#">Shop</a>
-//     <a class="nav-link" href="#">About Me</a>
-//     <a class="brand-link brand" href="#">Deina's Bites</a>
-//     <a class="nav-link" href="#">Instagram</a>
-//     <a class="nav-link" href="#">Facebook</a>
-//     <a class="nav-link" href="#">Youtube</a>
-//     <a class="nav-link" href="#">
-//         <span class="fa-stack">
-//             <i class="fas fa-shopping-bag fa-stack-2x"></i>
-//             <p class="fa-stack-1x cart-text">27</p>
-//         </span>
-//     </a>`
-// );

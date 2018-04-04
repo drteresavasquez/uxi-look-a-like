@@ -64,7 +64,30 @@ let cookies = [
         price: "$2.00",
         img1: "choc_chips.png",
         img2: "choc_chips-qv.png"
+    },
+    {
+        name: "SEEDS BITES",
+        sku: "0012",
+        price: "$5.00",
+        img1: "seeds.jpg",
+        img2: "seeds-qv.jpg"
+    },
+    {
+        name: "BUTTER COOKIES",
+        sku: "0010",
+        price: "$3.00",
+        img1: "butter.png",
+        img2: "butter-qv.png"
+    },
+    {
+        name: "NUTS & CARAMEL BITES",
+        sku: "0009",
+        price: "$2.00",
+        img1: "nuts_caramel.png",
+        img2: "nuts_caramel-qv.png"
     }
 ];
 
-module.exports = {cookies};
+let insta = ["bowls.jpg", "crackers.jpg", "ingredients.jpg", "spoon.jpg", "oranges.jpg", "choc_cookies.jpg"];
+
+module.exports = {cookies, insta};

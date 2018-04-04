@@ -9,7 +9,7 @@ let $ = require('jquery');
 function show(){
     $(".main").append(caro.showCarousel());
     best.show();
-    $(".main").append(follow.showFollow());
+    follow.showFollow();
     $('#home').addClass("active");
 }
 

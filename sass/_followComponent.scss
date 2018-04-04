@@ -18,7 +18,7 @@
 }
 
 .follow {
-    width: 80%;
+    width: 90%;
 }
 
 .follow-items {
@@ -42,4 +42,9 @@
     >[class*="col-"] {
         padding: 5px;
     }
+}
+
+#follow-grams{
+    height: 250px;
+    cursor: default;
 }
