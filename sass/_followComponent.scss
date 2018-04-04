@@ -1,0 +1,45 @@
+/********* FOLLOW COMPONENT **********/
+@import 'mixins';
+
+.follow-component {
+    height: 650px;
+    margin-bottom: 30px;
+}
+
+.jumbo-follow {
+    height: 300px;
+    h1 {
+        font-size: 1.75em;
+        text-align: center;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+.follow {
+    width: 80%;
+}
+
+.follow-items {
+    justify-content: space-around;
+}
+
+.follow-item {
+    border: none !important;
+    background: none !important;
+    border-radius: 0px !important;
+}
+
+.row.follow-items {
+    margin-bottom: 50px;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    >.col,
+    >[class*="col-"] {
+        padding: 5px;
+    }
+}

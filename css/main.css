@@ -38,12 +38,43 @@
   margin-left: .3em;
   color: white; }
 
-.container {
-  margin-top: 30px; }
-
 .carousel {
   background-color: #f6d9ea;
   height: 578px; }
+
+/********* FOOTER COMPONENT ********/
+.jumbo-footer {
+  background-color: #f6d9ea;
+  margin-top: 100px; }
+
+.footer-comp {
+  padding: 30px 200px 30px 150px; }
+
+/********* All Cookies COMPONENT**********/
+.all-cookies {
+  text-align: center;
+  margin: 60px 0; }
+
+.all-cookies-component {
+  height: 20px;
+  position: relative; }
+  .all-cookies-component button {
+    background: white;
+    position: relative;
+    z-index: 2;
+    border-radius: 0 !important;
+    text-transform: uppercase; }
+    .all-cookies-component button:hover {
+      background: white !important;
+      color: black !important; }
+  .all-cookies-component hr {
+    border: 0;
+    height: 1px;
+    background: black;
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    z-index: 1; }
 
 /**** BEST SELLER COMPONENT *********/
 .best-sellers {
@@ -91,32 +122,6 @@
   font-size: .8em;
   letter-spacing: -.5px; }
 
-/********* All Cookies **********/
-.all-cookies {
-  text-align: center;
-  margin: 60px 0; }
-
-.all-cookies-component {
-  height: 20px;
-  position: relative; }
-  .all-cookies-component button {
-    background: white;
-    position: relative;
-    z-index: 2;
-    border-radius: 0 !important;
-    text-transform: uppercase; }
-    .all-cookies-component button:hover {
-      background: white !important;
-      color: black !important; }
-  .all-cookies-component hr {
-    border: 0;
-    height: 1px;
-    background: black;
-    position: absolute;
-    top: 1px;
-    width: 100%;
-    z-index: 1; }
-
 /********* FOLLOW COMPONENT **********/
 .follow-component {
   height: 650px;
@@ -152,12 +157,7 @@
   .no-gutters > [class*="col-"] {
     padding: 5px; }
 
-/********* FOOTER COMPONENT ********/
-.jumbo-footer {
-  background-color: #f6d9ea;
-  margin-top: 100px; }
-
-.footer-comp {
-  padding: 30px 200px 30px 150px; }
+.container {
+  margin-top: 30px; }
 
 /*# sourceMappingURL=main.css.map */

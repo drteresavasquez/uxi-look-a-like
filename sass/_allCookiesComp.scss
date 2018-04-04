@@ -1,0 +1,33 @@
+/********* All Cookies COMPONENT**********/
+@import 'mixins';
+
+.all-cookies {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.all-cookies-component {
+    height: 20px;
+    position: relative;
+    button {
+        background: white;
+        position: relative;
+        z-index: 2;
+        border-radius: 0 !important;
+        text-transform: uppercase;
+        &:hover{
+            background: white !important;
+            color: black !important;
+        }
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 1px;
+        width: 100%;
+        z-index: 1;
+    }
+}
+

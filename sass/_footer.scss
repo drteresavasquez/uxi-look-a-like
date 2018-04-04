@@ -1,0 +1,11 @@
+/********* FOOTER COMPONENT ********/
+@import 'mixins';
+
+.jumbo-footer {
+    background-color: $pink;
+    margin-top: 100px;
+}
+
+.footer-comp {
+    padding: 30px 200px 30px 150px;
+}

@@ -1,0 +1,50 @@
+@import 'mixins';
+
+.nav {
+    margin-top: 40px;
+    align-items: center;
+}
+
+.brand {
+    flex-basis: 25%;
+    text-align: center;
+    margin-left: 70px;
+}
+
+.brand-link {
+    font-family: $headers;
+    font-size: 1.5em;
+    color: $text-color;
+    a {
+        color: $text-color;
+    }
+    &:hover {
+        text-decoration: none;
+        color: $text-color;
+    }
+}
+
+.nav-link {
+    color: $text-color;
+    font-family: $para;
+    text-transform: uppercase;
+    font-size: .75em;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    a {
+        color: $text-color;
+    }
+    &:hover {
+        color: $pink;
+    }
+}
+
+.active {
+    color: $pink;
+}
+
+.cart-text {
+    margin-top: .5em;
+    margin-left: .3em;
+    color: white;
+}
