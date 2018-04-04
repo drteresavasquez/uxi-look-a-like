@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,900|PT+Serif');
-
-$headers: 'PT Serif', serif;
-$para: 'Nunito', sans-serif;
+$headers: 'PT Serif',
+serif;
+$para: 'Nunito',
+sans-serif;
 $text-color: #191919;
 $green: #c0e8dd;
 $pink: #f6d9ea;
 $blue: #d2d5ea;
-
-
-.nav{
-    margin-top:40px;
+.nav {
+    margin-top: 40px;
     align-items: center;
 }
 
@@ -18,31 +17,41 @@ $blue: #d2d5ea;
     text-align: center;
     margin-left: 70px;
 }
-.brand-link{
+
+.brand-link {
     font-family: $headers;
     font-size: 1.5em;
     color: $text-color;
-    a{
+    a {
         color: $text-color;
-    }&:hover{
+    }
+    &:hover {
         text-decoration: none;
         color: $text-color;
     }
 }
-.nav-link{
+
+.nav-link {
     color: $text-color;
     font-family: $para;
     text-transform: uppercase;
     font-size: .75em;
     font-weight: 700;
     letter-spacing: -.5px;
-    a{
+    a {
         color: $text-color;
-    }&:hover{
+    }
+    &:hover {
         color: $pink;
     }
 }
 
-.active{
+.active {
     color: $pink;
+}
+
+.cart-text {
+    margin-top: .5em;
+    margin-left: .3em;
+    color: white;
 }
