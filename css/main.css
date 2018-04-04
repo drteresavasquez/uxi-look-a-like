@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700,900|PT+Serif");
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,400,600,700,900|PT+Serif:200,400,600,700,900");
 .nav {
   margin-top: 40px;
   align-items: center; }
@@ -42,20 +42,96 @@
   margin-top: 30px; }
 
 .carousel {
-  background-color: #f6d9ea; }
+  background-color: #f6d9ea;
+  height: 578px; }
 
+/**** BEST SELLER COMPONENT *********/
 .best-sellers {
-  justify-content: space-around;
-  width: 80%;
+  width: 85%;
   margin: auto;
-  margin-top: 20px; }
+  margin-top: 90px; }
+
+.heading h2 {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: .05em;
+  font-weight: 600; }
+
+.subheading p {
+  font-family: "PT Serif", serif;
+  text-align: center;
+  font-size: .80em;
+  margin-top: 25px;
+  margin-bottom: 40px; }
+
+.best-sellers-items {
+  justify-content: space-around; }
 
 .bs-item {
-  border: none !important; }
+  border: none !important;
+  background: none !important;
+  border-radius: 0px !important; }
+
+.card-text {
+  text-align: center;
+  margin-top: -10px; }
 
 .item-name {
   font-family: "Nunito", sans-serif;
   text-transform: uppercase;
-  color: #191919; }
+  color: #191919;
+  font-size: .95em;
+  font-weight: 600; }
+
+.item-price {
+  font-family: "PT Serif", serif;
+  color: #191919;
+  font-size: .8em;
+  letter-spacing: -.5px; }
+
+/********* FOLLOW COMPONENT **********/
+.follow-component {
+  height: 650px;
+  margin-bottom: 30px; }
+
+.jumbo-follow {
+  height: 300px; }
+  .jumbo-follow h1 {
+    font-size: 1.75em;
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.follow {
+  width: 80%; }
+
+.follow-items {
+  justify-content: space-around; }
+
+.follow-item {
+  border: none !important;
+  background: none !important;
+  border-radius: 0px !important; }
+
+.row.follow-items {
+  margin-bottom: 50px; }
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+  .no-gutters > .col,
+  .no-gutters > [class*="col-"] {
+    padding: 5px; }
+
+/********* FOOTER COMPONENT ********/
+.jumbo-footer {
+  background-color: #f6d9ea;
+  margin-top: 100px; }
+
+.footer-comp {
+  padding: 30px 200px 30px 150px; }
 
 /*# sourceMappingURL=main.css.map */
