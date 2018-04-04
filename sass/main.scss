@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:200,400,600,700,900|PT+Serif:200,400,600,700,900');
-
 $headers: 'PT Serif',
 serif;
 $para: 'Nunito',
@@ -8,7 +7,6 @@ $text-color: #191919;
 $green: #c0e8dd;
 $pink: #f6d9ea;
 $blue: #d2d5ea;
-
 .nav {
     margin-top: 40px;
     align-items: center;
@@ -58,23 +56,24 @@ $blue: #d2d5ea;
     color: white;
 }
 
-.container{
+.container {
     margin-top: 30px;
 }
 
-.carousel{
+.carousel {
     background-color: $pink;
     height: 578px;
 }
 
 /**** BEST SELLER COMPONENT *********/
-.best-sellers{
+
+.best-sellers {
     width: 85%;
     margin: auto;
     margin-top: 90px;
 }
 
-.heading h2{
+.heading h2 {
     font-family: $para;
     text-align: center;
     text-transform: uppercase;
@@ -82,7 +81,8 @@ $blue: #d2d5ea;
     letter-spacing: .05em;
     font-weight: 600;
 }
-.subheading p{
+
+.subheading p {
     font-family: $headers;
     text-align: center;
     font-size: .80em;
@@ -90,11 +90,11 @@ $blue: #d2d5ea;
     margin-bottom: 40px;
 }
 
-.best-sellers-items{
+.best-sellers-items {
     justify-content: space-around;
 }
 
-.bs-item{
+.bs-item {
     border: none !important;
     background: none !important;
     border-radius: 0px !important;
@@ -104,35 +104,69 @@ $blue: #d2d5ea;
 //     // height: 282px !important;
 //     // background-color: black;
 // }
-
-.card-text{
+.card-text {
     text-align: center;
     margin-top: -10px;
 }
-.item-name{
+
+.item-name {
     font-family: $para;
     text-transform: uppercase;
     color: $text-color;
     font-size: .95em;
     font-weight: 600;
 }
-.item-price{
+
+.item-price {
     font-family: $headers;
     color: $text-color;
-    font-size: .8em;
-    // font-weight: 500;
+    font-size: .8em; // font-weight: 500;
     letter-spacing: -.5px;
 }
 
-/********* FOLLOW COMPONENT **********/
-.follow-component{
- height: 650px;
- margin-bottom: 30px;
+/********* All Cookies **********/
+
+.all-cookies {
+    text-align: center;
+    margin: 60px 0;
 }
 
-.jumbo-follow{
+.all-cookies-component {
+    height: 20px;
+    position: relative;
+    button {
+        background: white;
+        position: relative;
+        z-index: 2;
+        border-radius: 0 !important;
+        text-transform: uppercase;
+        &:hover{
+            background: white !important;
+            color: black !important;
+        }
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 1px;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+
+/********* FOLLOW COMPONENT **********/
+
+.follow-component {
+    height: 650px;
+    margin-bottom: 30px;
+}
+
+.jumbo-follow {
     height: 300px;
-    h1{
+    h1 {
         font-size: 1.75em;
         text-align: center;
         font-weight: 200;
@@ -141,38 +175,40 @@ $blue: #d2d5ea;
     }
 }
 
-.follow{
+.follow {
     width: 80%;
 }
 
-.follow-items{
+.follow-items {
     justify-content: space-around;
 }
 
-.follow-item{
+.follow-item {
     border: none !important;
     background: none !important;
     border-radius: 0px !important;
 }
-.row.follow-items{
+
+.row.follow-items {
     margin-bottom: 50px;
 }
 
 .no-gutters {
     margin-right: 0;
     margin-left: 0;
-  
-    > .col,
-    > [class*="col-"] {
-      padding: 5px;
+    >.col,
+    >[class*="col-"] {
+        padding: 5px;
     }
-  }
+}
 
 /********* FOOTER COMPONENT ********/
-.jumbo-footer{
+
+.jumbo-footer {
     background-color: $pink;
     margin-top: 100px;
 }
-.footer-comp{
+
+.footer-comp {
     padding: 30px 200px 30px 150px;
 }

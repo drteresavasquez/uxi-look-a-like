@@ -91,6 +91,32 @@
   font-size: .8em;
   letter-spacing: -.5px; }
 
+/********* All Cookies **********/
+.all-cookies {
+  text-align: center;
+  margin: 60px 0; }
+
+.all-cookies-component {
+  height: 20px;
+  position: relative; }
+  .all-cookies-component button {
+    background: white;
+    position: relative;
+    z-index: 2;
+    border-radius: 0 !important;
+    text-transform: uppercase; }
+    .all-cookies-component button:hover {
+      background: white !important;
+      color: black !important; }
+  .all-cookies-component hr {
+    border: 0;
+    height: 1px;
+    background: black;
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    z-index: 1; }
+
 /********* FOLLOW COMPONENT **********/
 .follow-component {
   height: 650px;
