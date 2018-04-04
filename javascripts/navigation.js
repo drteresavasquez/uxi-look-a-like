@@ -1,7 +1,8 @@
 "use strict";
 console.log("navigation linked");
 
-let $ = require('jquery');
+let $ = require('jquery'),
+    home = require('./homepage');
 
 let nav = ["home", "shop", "about", "brand", "instagram", "facebook", "youtube"];
 
@@ -25,13 +26,17 @@ $(".nav").append(`<a class="nav-link" href="#" id="shoppingBag">${shoppingBag}</
 
 $(nav).each(function(index, item) {
     $(`#${item}`).on("click", function(e){
-    
+        $(".nav-link").removeClass("active");
     let itemId = $(`#${item}`).attr('id'); 
-        switch (itemId) {
-            case `${itemId}`:
-                $(".nav-link").removeClass("active");
-                $(`#${itemId}`).addClass("active");
-                break;
+        
+    switch (itemId) {
+        case 'home':
+            $(`#${itemId}`).addClass("active");
+            home.showHomepage();
+            break;
+        case 'shop':
+            $(`#${itemId}`).addClass("active");
+            home.showHomepage();
         }
     });
 });
