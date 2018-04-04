@@ -2,7 +2,9 @@
 console.log("navigation linked");
 
 let $ = require('jquery'),
-    home = require('./homepage');
+    home = require('./homepage'),
+    about = require('./about'),
+    shop = require('./shop');
 
 let nav = ["home", "shop", "about", "brand", "instagram", "facebook", "youtube", "shoppingBag"];
 
@@ -28,17 +30,19 @@ $(nav).each(function(index, item) {
         $(".main").html("");
         $(".nav-link").removeClass("active");
         $(".main").removeClass("gray");
-
+        
     let itemId = $(`#${item}`).attr('id'); 
         
     switch (itemId) {
         case 'home':
-            $(`#${itemId}`).addClass("active");
-            home.showHomepage();
+            home.show();
             break;
         case 'shop':
-            $(`#${itemId}`).addClass("active");
-            $(".main").addClass("gray");
+            shop.show();
+            break;
+        case 'about':
+            about.show();
+            break;
         }
     });
 });

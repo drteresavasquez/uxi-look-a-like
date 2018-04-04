@@ -6,10 +6,11 @@ let follow = require("./homepageComponents/followComponent");
 
 let $ = require('jquery');
 
-function showHomepage(){
+function show(){
     $(".main").append(caro.showCarousel());
-    $(".main").append(best.showBest());
+    best.show();
     $(".main").append(follow.showFollow());
+    $('#home').addClass("active");
 }
 
-module.exports = {showHomepage};
+module.exports = {show};

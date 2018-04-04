@@ -1,11 +1,11 @@
 "use strict";
 console.log("best sellers linked");
 
-let $ = require('jquery');
+let $ = require('jquery'),
+    baked = require("./../cookies"); //baked.cookies
 
-function showBest() {
-    let component = `
-<!-- ***** BEGIN BEST SELLERS COMPONENT ***** -->
+function show() {
+    $(".main").append(`
         <div class="container best-sellers">
             <div class="heading">
                 <h2>/ Best Sellers</h2>
@@ -14,36 +14,7 @@ function showBest() {
                 <p>I'm a paragraph. Click here to add your own text and edit me.</p>
             </div>
             <div class="row best-sellers-items justify-content-center">
-                <div class="card col-sm-4 bs-item">
-                    <img class="card-img-top" src="images/cookies/butter-qv.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">
-                            <span class="item-name">Oatmeal Bites</span>
-                            <br>
-                            <span class="item-price">$100.00</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="card col-sm-4 bs-item">
-                    <img class="card-img-top" src="images/cookies/butter-qv.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">
-                            <span class="item-name">Oatmeal Bites</span>
-                            <br>
-                            <span class="item-price">$100.00</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="card col-sm-4 bs-item">
-                    <img class="card-img-top" src="images/cookies/butter-qv.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">
-                            <span class="item-name">Jam & Poppy Seed Bites</span>
-                            <br>
-                            <span class="item-price">$100.00</span>
-                        </p>
-                    </div>
-                </div>
+                
             </div>
 
             <!-- ***** BEGIN ALL COOKIES BUTTON ***** -->
@@ -55,12 +26,26 @@ function showBest() {
             </div>
             <!-- ***** END ALL COOKIES BUTTON ***** -->
 
-        </div>
-        <!-- ***** END BEST SELLERS COMPONENT ***** -->`;
+        </div>`);
 
-    return component;
+        let firstThree = baked.cookies.slice(1,4);
+
+        firstThree.forEach((cookie)=>{
+            $('.best-sellers-items').append(`
+            <div class="card col-sm-4 bs-item">
+            <img class="card-img-top" src="images/cookies/${cookie.img1}" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">
+                    <span class="item-name">${cookie.name}</span>
+                    <br>
+                    <span class="item-price">${cookie.price}</span>
+                </p>
+            </div>
+        </div>
+            `);
+        });
 }
 
 module.exports = {
-    showBest
+    show
 };
