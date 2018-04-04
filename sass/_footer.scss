@@ -7,5 +7,29 @@
 }
 
 .footer-comp {
-    padding: 30px 200px 30px 150px;
+    padding: 30px 150px 0 100px;
+}
+
+.footer-col p.title{
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.footer-col ul {
+    margin-left: 0; 
+    padding-left: 0;
+}
+.footer-col li {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: $headers;
+    font-size: .8em;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.footer-col-full{
+    font-family: $headers;
+    font-size: .8em;
+    margin-top: 15px;
 }
