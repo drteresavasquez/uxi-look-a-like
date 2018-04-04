@@ -7,6 +7,7 @@ $text-color: #191919;
 $green: #c0e8dd;
 $pink: #f6d9ea;
 $blue: #d2d5ea;
+
 .nav {
     margin-top: 40px;
     align-items: center;
@@ -54,4 +55,27 @@ $blue: #d2d5ea;
     margin-top: .5em;
     margin-left: .3em;
     color: white;
+}
+
+.container{
+    margin-top: 30px;
+}
+
+.carousel{
+    background-color: $pink;
+}
+
+.best-sellers{
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.bs-item{
+    border: none !important;
+}
+.item-name{
+    font-family: $para;
+    text-transform: uppercase;
+    color: $text-color;
 }

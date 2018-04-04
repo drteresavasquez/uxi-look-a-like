@@ -38,4 +38,24 @@
   margin-left: .3em;
   color: white; }
 
+.container {
+  margin-top: 30px; }
+
+.carousel {
+  background-color: #f6d9ea; }
+
+.best-sellers {
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px; }
+
+.bs-item {
+  border: none !important; }
+
+.item-name {
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  color: #191919; }
+
 /*# sourceMappingURL=main.css.map */
