@@ -35,6 +35,9 @@ $(nav).each(function(index, item) {
         
     switch (itemId) {
         case 'home':
+        case 'instagram':
+        case 'facebook':
+        case 'youtube':
             home.show();
             break;
         case 'shop':
